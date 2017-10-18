@@ -1,125 +1,115 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+.header{
+	height: 90px;
+	background-color: #1c60ff;  
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-/*INCEPUT */
-
-header{
-	background-color: #051270;
-	height: 120px;
-	width:100%;
-	border:2px solid;
-
-}
-header img{
-	float: left;
-}
-.container{
-	width:1000px;
-	margin: 0 auto;
-}
-nav{
-	float: right;
-}
-nav ul{
-	margin-top:50px;
-	margin-right:30px;
-	list-style: none;
-}
-nav ul li{
-	display: inline-block;
-	background-color: transparent;
-	border: 1px solid white;
-	width:61px;
-	text-align:center;
-	line-height: 50px;
-	margin-left: 100px;
-}
-nav ul li:hover{
-	background-color: #388222;
-}
-
-nav ul li a{
-	color:#89fff3;
+a{
 	text-decoration: none;
-	font-family: serif;
-	font-size: 20px;
 }
-.AC_Origins{
-	width:100%;
-	height:500px;
-	background-color: #222;
-	/*margin-left: 296px;*/
+ul{
+	float:right;
+	margin-top:10px;
+	margin-right:30px;
 }
-.sectiune_text{
-	background-color: #42b9f4;
-	width: 100%;
-	padding: 50px 0px;
-	border: 2px solid;
-	border-radius: 50px;
-}
-.sectiune_text h1{
-	text-align:center;
-	padding-bottom:20px;
-	font-size:25px;
-	font-family:serif;
-	text-transform: uppercase;
-	word-spacing: 2px;
-	text-shadow: 2px 2px blue;
-
-}
-.sectiune_text p{
-	font-size:20px;
-	text-indent:60px;
-}
-footer{
-	width:100%;
-	background-color: #051270;
-	padding: 60px 0px;
-}
-footer h1{
-	text-align: center;
-	font-size: 25px;
+ul li{
+	display: inline-block;
 	font-family: sans-serif;
+	font-size:22px;
+	margin-left:20px;
+	text-decoration: none;
+}
+
+ul li:hover a{
+	border:2px solid;
+	border-radius: 10px;
 	color:white;
+	transition: 0.2s;
+}
+.header h2{
+	text-align: center;
+	font-size: 26px;
+	padding-top: 20px;
+	font-family: sans-serif;
+	font-weight: bold;
+	color: white;
+}
+body{
+	margin:0;
+	padding:0;
+	font-family: sans-serif;
+}
+.loginBox{
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-top:100px;
+	transform: translate(-50%,-50%);
+	width:350px;
+	height:500px;
+	padding: 80px 40px;
+	box-sizing:border-box;
+	background: rgba(0,0,0,.5);
+}
+.user_logo{
+	width:100px;
+	height:100px;
+	border-radius:50%;
+	overflow:hidden;
+	position:absolute;
+	top:calc(-100px/2);
+	left:calc(50% - 50px);
+}
+.bg_logo{
+	background-size: cover;
+}
+h1{
+	margin:0;
+	padding: 0 0 20px;
+	color: #efed40;
+	text-align: center;
+	font-size:20px;
+	font-weight: bold;
+}
+/*.loginBox p{
+	margin:0;
+	padding:0;
+	font-weight: bold;
+	color: #fff;
+}*/
+.loginBox input{
+	width:100%;
+	margin-bottom: 20px;
+}
+.loginBox input[type="text"], .loginBox input[type="password"]{
+	border:none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline:none;
+	height:25px;
+	color: #fff;
+	font-size:16px;
+	text-indent: 5px;
+}
+::placeholder{
+	color: rgba(255,255,255,.5);
+}
+.loginBox input[type="submit"]{
+	border:none;
+	outline:none;
+	height:40px;
+	color:#fff;
+	font-size:16px;
+	background: #25A4F4;
+	cursor:pointer;
+	border-radius:20px;
+}
+
+.loginBox input[type="submit"]:hover{
+	background: #F63232;
+	color:#262626;
+	transition: 0.3s;
+}
+.loginBox a{
+	color: #fff;
+	font-size: 14px;
+	font-weight:bold;
 }
