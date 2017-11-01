@@ -1,0 +1,397 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*INCEPUT */
+body{
+	background:url("../imagini/bg1.jpg") no-repeat;
+	background-size: cover;
+	font-family: sans-serif;
+	color:white;
+}
+.topOfPage{
+	height: 100px;
+	width:100%;
+	border-radius:7px;
+	box-sizing:border-box;
+	background: rgba(17, 69, 137,.5);
+}
+.topOfPage p{
+	font-size:25px;
+	text-align:center;
+	font-weight: bold;
+	padding-top:20px;
+}
+.topOfPage input{
+	border:none;
+	outline:none;
+	height:40px;
+	color:#fff;
+	font-size:16px;
+	background: #25A4F4;
+	cursor:pointer;
+	border-radius:20px;
+}
+.topOfPage input:hover{
+	background: #F63232;
+	color:#262626;
+	transition: 0.3s;
+}
+header img{
+	float: left;
+}
+.container{
+	width:885px;
+	margin: 0 auto;
+}
+ul{
+	margin:0px;
+	padding:0px;
+	list-style: none;
+}
+ul li{
+	float:left;
+	width:147.5px;
+	height:40px;
+	background-color:black;
+	opacity: .8;
+	border-radius: 7px;
+	line-height: 40px;
+	text-align: center;
+	font-size:20px;
+	cursor: pointer;
+
+}
+ul li a{
+	text-decoration: none;
+	color:white;
+	display:block;
+}
+ul li a:hover{
+	background-color:green;
+	border-radius: 7px;
+}
+ul li ul li{
+	display:none;
+}
+ul li:hover ul li{
+	display: block;
+}
+.slider{
+	overflow:hidden;
+	height:500px;
+	width:885px;
+	margin-left:243px;
+}
+.slider figure div{
+	float:left;
+	width:20%;
+}
+.slider figure img{
+	width:100%;
+	float:left;
+}
+.slider figure{
+	position:relative;
+	width:500%;
+	margin:0px;
+	left:0;
+	animation: 40s slidy infinite;
+}
+@keyframes slidy{
+	0%{
+		left:0%;
+	}
+	10%{
+		left:0%;
+	}
+	12%{
+		left:-100%;
+	}
+	22%{
+		left:-100%;
+	}
+	24%{
+		left:-200%;
+	}
+	34%{
+		left:-200%;
+	}
+	36%{
+		left:-300%;
+	}
+	46%{
+		left:-300%;
+	}
+	48%{
+		left:-400%;
+	}
+	58%{
+		left:-400%;
+	}
+	60%{
+		left:-300%;
+	}
+	70%{
+		left:-300%;
+	}
+	72%{
+		left:-200%;
+	}
+	82%{
+		left:-200%;
+	}
+	84%{
+		left:-100%;
+	}
+	94%{
+		left:-100%;
+	}
+	96%{
+		left:0%;
+	}
+
+}
+
+.Top2016{
+	width:100%;
+	height:250px;
+	margin-left:250px;
+	margin-top:10px;
+	margin-bottom:30px;
+	/*margin-left: 296px;*/
+}
+.Top2016 p{
+	font-size:20px;
+	color:white;;
+	font-weight: bold;
+	font-family: sans-serif;
+	
+	margin-bottom:10px;
+}
+.block .head .head-cnt { 
+	background: rgba(17, 69, 137,.5);
+ 	line-height: 30px;
+  	height: 35px; 
+  	padding-right: 13px;
+ }
+.articole_jocuri header{
+width:885px;
+height:7px;
+padding-bottom:30px;
+margin-left:10px;
+} 
+.block .head .view-all { float: right; display: inline; width: 61px; height: 16px; line-height: 16px; background: url(../imagini/block-head-view-all.gif); margin-top: 8px; } 
+.block .head .view-all {font-size: 10px; text-decoration: none; text-align: center; }
+.block .head .view-all:hover { text-decoration: underline; }
+.block .head h3 { font-size: 25px; font-weight: bold; color: white; text-indent: 10px; }
+
+.sectiune_text{
+	width: 100%;
+	padding: 50px 0px;
+	margin-top:100px;
+	box-sizing:border-box;
+	background: rgba(0,0,0,.5);
+}
+.sectiune_text h1{
+	text-align:center;
+	padding-bottom:20px;
+	font-size:25px;
+	font-family:serif;
+	text-transform: uppercase;
+	word-spacing: 2px;
+	text-shadow: 2px 2px blue;
+
+}
+.sectiune_text p{
+	font-size:18px;
+	text-indent:40px;
+}
+.articole_jocuri{
+	width:100%;
+	padding:30px 0px;
+	overflow: hidden;
+	box-sizing:border-box;
+	background: rgba(0, 0, 0, .5);
+}
+.articole_jocuri article{
+	width:100%;
+	box-sizing:border-box;
+	background: rgba(17, 69, 137,.5);
+	border-radius:20px;
+	margin: 10px 1%;
+}
+.img_art1{
+	width:500px;
+	margin-left:200px;
+	height:250px;
+	background-image: url("../imagini/fc5.jpg");
+	padding-top:20px;
+	border-radius: 20px;
+}
+.img_art2{
+	width:500px;
+	margin-left:200px;
+	height:250px;
+	background-image: url("../imagini/aco.jpg");
+	padding-top:20px;
+	border-radius: 20px;
+}
+.img_art3{
+	width:500px;
+	margin-left:200px;
+	height:210px;
+	background-image: url("../imagini/fifa18.jpg");
+	padding-top:30px;
+	border-radius: 20px;
+}
+.img_art4{
+	width:500px;
+	margin-left: 200px;
+	height:250px;
+	background-image: url("../imagini/codWWII.jpg");
+	padding-top:20px;
+	border-radius: 20px;
+}
+.articole_jocuri article h2{
+	text-align:center;
+	font-size:20px;
+	font-weight: bold;
+	font-family:sans-serif;
+}
+.articole_jocuri article p{
+	font-size:15px;
+	font-family:sans-serif;
+	font-weight: bold;
+	text-indent: 25px;
+	padding-top:10px;
+	margin:20px;
+}
+.articole_video header{
+	width:885px;
+	height:7px;
+	padding-bottom:30px;
+	margin-left:10px;
+}
+
+.articole_video article{
+	width:100%;
+	box-sizing:border-box;
+	background: rgba(17, 69, 137,.5);
+	margin-left:10px;
+	margin-top:10px;
+}
+.articole_video article p{
+	float: right;
+	margin-top:150px;
+	margin-right:50px;
+
+}
+.lista_jocuri_pagina_reviews article{
+	width:23%;
+	height: 150px;
+	float:left;
+	box-sizing:border-box;
+	background: rgba(17, 69, 137,.5);
+	border-radius:20px;
+	margin: 10px 1%;
+}
+.lista_jocuri_pagina_reviews article img{
+	width:203px;
+	height:130px;
+	border-radius: 20px;
+}
+.lista_jocuri_pagina_reviews article h2{
+	text-align:center;
+	font-weight: bold;
+}
+footer{
+	margin-top:200px;
+	width:100%;
+	padding: 60px 0px;
+	box-sizing:border-box;
+	background: rgba(0, 0, 0,.5);
+}
+footer h1{
+	text-align: center;
+	font-size: 25px;
+	font-family: sans-serif;
+	color:white;
+}
+.contact{
+	width:100%;
+	padding: 100px 0px;
+}
+.contact input{
+	width:20%;
+	height:20px;
+	text-indent: 7.5px;
+}
+.radioform{
+	width: 2% !important;
+}
+.contact textarea{
+	width: 40%;
+	height: 150px;
+	padding: 50px 0px;
+	resize: none;
+}
+.contact button{
+	border:none;
+	outline:none;
+	width:100px;
+	height:40px;
+	color:#fff;
+	font-size:16px;
+	background: #25A4F4;
+	cursor:pointer;
+	border-radius:20px;
+}
+.contact button:hover{
+	background: #F63232;
+	color:#262626;
+	transition: 0.3s;
+}
+@media(max-width: 700px){
+	
+}
