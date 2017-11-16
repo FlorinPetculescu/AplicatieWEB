@@ -44,11 +44,12 @@ table {
 
 /*INCEPUT */
 body{
-	background:url("../imagini/bg1.jpg") no-repeat;
+	background:url("../imagini/bg2.jpg") no-repeat;
 	background-size: cover;
 	font-family: sans-serif;
 	color:white;
 }
+
 .topOfPage{
 	height: 100px;
 	width:100%;
@@ -84,6 +85,7 @@ header img{
 	width:885px;
 	margin: 0 auto;
 }
+
 ul{
 	margin:0px;
 	padding:0px;
@@ -108,7 +110,7 @@ ul li a{
 	display:block;
 }
 ul li a:hover{
-	background-color:green;
+	background-color:#28b217;
 	border-radius: 7px;
 }
 ul li ul li{
@@ -128,8 +130,10 @@ ul li:hover ul li{
 	width:20%;
 }
 .slider figure img{
-	width:100%;
+	width:95%;
 	float:left;
+	border:3px ridge;
+	margin-left:25px;
 }
 .slider figure{
 	position:relative;
@@ -206,7 +210,6 @@ ul li:hover ul li{
 	color:white;;
 	font-weight: bold;
 	font-family: sans-serif;
-	
 	margin-bottom:10px;
 }
 .block .head .head-cnt { 
@@ -261,38 +264,19 @@ margin-left:10px;
 	border-radius:20px;
 	margin: 10px 1%;
 }
-.img_art1{
+.card img{
 	width:500px;
 	margin-left:200px;
 	height:250px;
-	background-image: url("../imagini/fc5.jpg");
-	padding-top:20px;
+	border:2px groove;
 	border-radius: 20px;
+	transition: all 1.5s ease;
+	transform-style: preserve-3d;
 }
-.img_art2{
-	width:500px;
-	margin-left:200px;
-	height:250px;
-	background-image: url("../imagini/aco.jpg");
-	padding-top:20px;
-	border-radius: 20px;
+.card img:hover{
+	transform: rotateY(180deg);
 }
-.img_art3{
-	width:500px;
-	margin-left:200px;
-	height:210px;
-	background-image: url("../imagini/fifa18.jpg");
-	padding-top:30px;
-	border-radius: 20px;
-}
-.img_art4{
-	width:500px;
-	margin-left: 200px;
-	height:250px;
-	background-image: url("../imagini/codWWII.jpg");
-	padding-top:20px;
-	border-radius: 20px;
-}
+
 .articole_jocuri article h2{
 	text-align:center;
 	font-size:20px;
@@ -341,6 +325,9 @@ margin-left:10px;
 	height:130px;
 	border-radius: 20px;
 }
+.lista_jocuri_pagina_reviews article img:hover{
+	transform:scale(1.05);
+}
 .lista_jocuri_pagina_reviews article h2{
 	text-align:center;
 	font-weight: bold;
@@ -348,7 +335,14 @@ margin-left:10px;
 footer{
 	margin-top:200px;
 	width:100%;
-	padding: 60px 0px;
+	padding: 15px 0px;
+	box-sizing:border-box;
+	background: rgba(0, 0, 0,.5);
+}
+.forReviewsOnly{
+	margin-top:500px;
+	width:100%;
+	padding: 15px 0px;
 	box-sizing:border-box;
 	background: rgba(0, 0, 0,.5);
 }
@@ -360,20 +354,20 @@ footer h1{
 }
 .contact{
 	width:100%;
-	padding: 100px 0px;
+	padding: 75px 0px;
 }
 .contact input{
 	width:20%;
 	height:20px;
-	text-indent: 7.5px;
+	text-indent: 3px;
 }
 .radioform{
 	width: 2% !important;
 }
 .contact textarea{
 	width: 40%;
-	height: 150px;
-	padding: 50px 0px;
+	height: 100px;
+	padding: 20px 0px;
 	resize: none;
 }
 .contact button{
@@ -392,6 +386,49 @@ footer h1{
 	color:#262626;
 	transition: 0.3s;
 }
-@media(max-width: 700px){
-	
+#img_div{
+	width:50%;
+	height:450px;
+	padding:5px;
+	margin: 15px auto;
+	box-sizing:border-box;
+	background: black;
+	opacity:.9;
+	border-radius:20px;
+}
+#img_div:after{
+	display:block;
+	clear:both;
+}
+#img_p{
+	font-size: 16px;
+	color:white;
+	text-indent: 10px;
+	text-align:center;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+#pretProdus{
+	float:right;
+	color:yellow;
+	font-size:25px;
+	font-weight: bold;
+	font-style: italic;
+	margin-top:130px;
+}
+#numarTelefon{
+	float:left;
+	margin-top:130px;
+	font-size:20px;
+	font-style: sans-serif;
+	color:yellow;
+	font-style: italic;
+	text-decoration: none;
+}
+#numarTelefon:hover{
+	text-decoration: underline;
+	color:white;
+}
+.table_images:hover{
+	transform: scale(1.05);
 }

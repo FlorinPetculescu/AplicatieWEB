@@ -9,61 +9,92 @@ if(!empty($_POST['nume']) && !empty($_POST['prenume']) && !empty($_POST['comment
 	$result=mysqli_query($conectare,$sql);
 	header("Location: fc5.php?info=succes");
 }
-
+	
 ?>
-
+<?php
+	$conectare2=mysqli_connect("localhost","root","","poze_reviews");
+?>
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="UTF-8">
 		<title>
-			GamePortal
+			GamePortal - Far Cry 5
 		</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	<body>
 		<div class="container">
 			<header class="topOfPage">
-				<img src="imagini/logo.png" alt="GamePortal logo">	
+				<img src="imagini/logo.png" alt="GamePortal logo" style="border-radius: 5px;">	
+				<p style="font-style: italic; text-shadow: 1px 1px #1642e0;">Far Cry 5</p>
 				<form action="../login_system/index.php" style="text-align: right;">
 					<input type="submit" value="Log Out">
 				</form>
 			</header>
 			<ul>
-				<li><a href="index.html">Acasă</a></li>
+				<li><a href="index.php">Acasă</a></li>
 				<li><a>Platforme</a>
 					<ul>
 						<li><a>PS4</a></li>
 						<li><a>XBOX ONE</a></li>
 						<li><a>PC</a></li>
-						<li><a>Android</a></li>
 					</ul>
 				</li>
 				<li><a>Noutăți</a>
 					<ul>
-						<li><a href="noutati_jocuri_noi.html">Jocuri noi</a></li>
+						<li><a href="noutati_jocuri_noi.php">Jocuri noi</a></li>
 					</ul>
 				</li>
-				<li><a href="reviews.html">Reviews</a></li>
-				<li><a>Galerie</a></li>
-				<li><a href="contact.html">Contact</a></li>
+				<li><a href="reviews.php">Reviews</a></li>
+				<li><a href="magazin.php">Magazin</a></li>
+				<li><a href="contact.php">Contact</a></li>
 			</ul>
 		</div>
 		<section>
-			<br><br>
+			<br><br><br>
 		</section>
 		<br><br>
 		<section>
 			<div class="lista_jocuri_pagina_reviews">
 				<div class="container">
-					<h1 style="font-size:20px;text-indent:20px;">Set in America for the first time, Far Cry 5 offers players total freedom to navigate a serene-looking yet deeply twisted world, as the new junior deputy of fictional Hope County, Montana who becomes embroiled in an attempted takeover of the county by the Project at Eden’s Gate, a doomsday cult. Players will find that their arrival accelerates a years-long silent coup by a fanatical doomsday cult, the Project at Eden's Gate, igniting a violent takeover of the county.<br><br>
+					<h2 style="font-size:20px; color: black; text-indent:20px; box-sizing: content-box; background: rgba(244, 252, 251,.7);">Set in America for the first time, Far Cry 5 offers players total freedom to navigate a serene-looking yet deeply twisted world, as the new junior deputy of fictional Hope County, Montana who becomes embroiled in an attempted takeover of the county by the Project at Eden’s Gate, a doomsday cult. Players will find that their arrival accelerates a years-long silent coup by a fanatical doomsday cult, the Project at Eden's Gate, igniting a violent takeover of the county.<br><br>
 
 					Far Cry 5 will allow players to explore the entire open-world in-game version of Montana alone or in two player co-op. Under siege and cut off from the rest of the world, players will join forces with residents of Hope County and form the Resistance.
 					You play a sheriff’s deputy caught up in a war between the US Marshal Service and Hope County’s resident cult leader, Joseph – a man who believes he’s been chosen to protect his followers from a government collapse he believes to be imminent – and his family: brothers Jacob and John and their half-sister, Faith. You won’t be alone, of course. Joining you in the battle for Hope County’s soul are potential allies like Pastor Jerome, whose church has come under fire by Joseph’s group; Mary May, whose father was killed by the cult; and Nick Rye, a pilot and soon-to-be father who wants to follow in the footsteps of his father and grandfather, who both fought for the US.<br><br>
 					Ultimately, maybe Far Cry 5’s theme bothers you. Maybe it doesn’t. Maybe in these politically charged times you don’t want your escapist entertainment to remind you of real-world issues. Maybe you don’t care. Either way, Far Cry 5 is almost certainly going to get a reaction out of you. And isn’t that what the last couple numbered Far Cry games have been building towards?
-					</h4>
+					</h2>
 				</div>
-				<section>
+		</section>
+		<section>
+			<br><br>
+		</section>
+		<section>
+			<div class="container">
+					<table>
+						<td>
+							<div class="table_images">
+								<?php 
+								$sql2="SELECT * FROM images WHERE cale='imagini/fc5gameplay1.jpg'";
+								$res2=mysqli_query($conectare2,$sql2);
+								$row2=mysqli_fetch_array($res2);  
+							 ?><img src="<?php echo $row2['cale'];?>" style="width:98%; border: 2px ridge; border-radius:10px;">
+							</div>
+						</td>
+						<td>
+							<div class="table_images">
+								<?php 
+								$sql2="SELECT * FROM images WHERE cale='imagini/fc5gameplay2.jpg'";
+								$res2=mysqli_query($conectare2,$sql2);
+								$row2=mysqli_fetch_array($res2);  
+							 ?><img src="<?php echo $row2['cale'];?>" style="width:98%; border: 2px ridge; border-radius:10px;">
+							</div>
+						</td>
+					</table>
+				</div>
+			</div>
+		</section>
+		<section>
 			<div class="contact">
 				<div class="container">
 					<form action="fc5.php" method="POST">
@@ -71,7 +102,7 @@ if(!empty($_POST['nume']) && !empty($_POST['prenume']) && !empty($_POST['comment
 						<br><br>
 						<input type="text" name="prenume" placeholder="Prenume">
 						<br><br>
-						<textarea name="comment" placeholder="Inserati textul..."></textarea>
+						<textarea name="comment" placeholder="Inserați textul..."></textarea>
 						<br><br>
 						<button name="trimite">Trimite</button>
 					</form>
@@ -100,9 +131,9 @@ if(!empty($_POST['nume']) && !empty($_POST['prenume']) && !empty($_POST['comment
 			</div>
 		</section>
 			</div>
-		</section>
+	</section>
 		<footer>
-			<h1>COPYRIGHT &copy - Toate drepturile rezervate de GameField 2017</h1>
+			<h1 style="font-style: italic; color: yellow; text-shadow: 2px 2px black;">COPYRIGHT &copy - Toate drepturile rezervate de GameField 2017</h1>
 		</footer>
 	</body>
 </html>
