@@ -393,6 +393,7 @@ footer h1{
 	margin: 15px auto;
 	box-sizing:border-box;
 	background: black;
+	border:2px ridge;
 	opacity:.9;
 	border-radius:20px;
 }

@@ -1,5 +1,5 @@
 <?php
-	require("conectarePhotos.php");
+	require("conectareMagazin.php");
 	//daca este apasat butonul VINDE
 	if(isset($_POST['Vinde'])){
 		//calea pentru a stoca imaginea
@@ -94,7 +94,7 @@
 			</div>
 		</section>
 		<footer>
-			<h1 style="font-style: italic; color: yellow; text-shadow: 2px 2px black;">COPYRIGHT &copy GameField 2017</h1>
+			<h1 style="font-style: italic; color: yellow; text-shadow: 2px 2px black;">COPYRIGHT &copy - Toate drepturile rezervate de GameField 2017</h1>
 		</footer>
 	</body>
 </html>

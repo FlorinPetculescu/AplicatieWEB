@@ -57,34 +57,34 @@
 					</header>
 					<article>
 							<?php 
-								$sql="SELECT * FROM images WHERE cale='imagini/fc5.jpg'";
+								$sql="SELECT * FROM games WHERE cale='imagini/fc5.jpg'";
 								$res=mysqli_query($conectare,$sql);
-								$row=mysqli_fetch_array($res);  
-							 ?><a href="fc5.php"><img src="<?php echo $row['cale'];?>"></a>
+								$row=mysqli_fetch_array($res); 
+							 ?><a href="games.php?id=<?php echo $row['id']; ?>"><img src="<?php echo $row['cale'];?>"></a>
 						<h2 style="font-style: italic;">Far Cry 5</h2>
 					</article>
 					<article>
 							<?php 
-								$sql="SELECT * FROM images WHERE cale='imagini/aco.jpg'";
+								$sql="SELECT * FROM games WHERE cale='imagini/aco.jpg'";
 								$res=mysqli_query($conectare,$sql);
 								$row=mysqli_fetch_array($res);  
-							 ?><a href="aco.php"><img src="<?php echo $row['cale'];?>"></a>
+							 ?><a href="games.php?id=<?php echo $row['id']; ?>"><img src="<?php echo $row['cale'];?>"></a>
 						<h2 style="font-style: italic;">Assassin's Creed Origins</h2>
 					</article>
 					<article>
 							<?php 
-								$sql="SELECT * FROM images WHERE cale='imagini/fifa18.jpg'";
+								$sql="SELECT * FROM games WHERE cale='imagini/fifa18.jpg'";
 								$res=mysqli_query($conectare,$sql);
 								$row=mysqli_fetch_array($res);  
-							 ?><a href="fifa18.php"><img src="<?php echo $row['cale'];?>"></a>
+							 ?><a href="games.php?id=<?php echo $row['id']; ?>"><img src="<?php echo $row['cale'];?>"></a>
 						<h2 style="font-style: italic;">FIFA 18</h2>
 					</article>
 					<article>
 							<?php 
-								$sql="SELECT * FROM images WHERE cale='imagini/codWWII.jpg'";
+								$sql="SELECT * FROM games WHERE cale='imagini/codWWII.jpg'";
 								$res=mysqli_query($conectare,$sql);
 								$row=mysqli_fetch_array($res);  
-							 ?><a href="codWWII.php"><img src="<?php echo $row['cale'];?>"></a>
+							 ?><a href="games.php?id=<?php echo $row['id']; ?>"><img src="<?php echo $row['cale'];?>"></a>
 						<h2 style="font-style: italic;">Call of Duty WWII</h2>
 					</article>
 				</div>
@@ -95,34 +95,34 @@
 				<div class="container">
 					<article>
 							<?php 
-								$sql="SELECT * FROM images WHERE cale='imagini/nfspayback.jpg'";
+								$sql="SELECT * FROM games WHERE cale='imagini/nfspayback.jpg'";
 								$res=mysqli_query($conectare,$sql);
 								$row=mysqli_fetch_array($res);  
-							 ?><a href="nfspayback.php"><img src="<?php echo $row['cale'];?>"></a>
+							 ?><a href="games.php?id=<?php echo $row['id']; ?>"><img src="<?php echo $row['cale'];?>"></a>
 						<h2 style="font-style: italic;">Need for Speed Payback</h2>
 					</article>	
 					<article>
 							<?php 
-								$sql="SELECT * FROM images WHERE cale='imagini/destiny2.jpg'";
+								$sql="SELECT * FROM games WHERE cale='imagini/destiny2.jpg'";
 								$res=mysqli_query($conectare,$sql);
 								$row=mysqli_fetch_array($res);  
-							 ?><a href="destiny2.php"><img src="<?php echo $row['cale'];?>"></a>
+							 ?><a href="games.php?id=<?php echo $row['id']; ?>"><img src="<?php echo $row['cale'];?>"></a>
 						<h2 style="font-style: italic;">Destiny 2</h2>
 					</article>	
 					<article>
 							<?php 
-								$sql="SELECT * FROM images WHERE cale='imagini/unchartedLL.jpg'";
+								$sql="SELECT * FROM games WHERE cale='imagini/unchartedLL.jpg'";
 								$res=mysqli_query($conectare,$sql);
 								$row=mysqli_fetch_array($res);  
-							 ?><a href="unchartedLL.php"><img src="<?php echo $row['cale'];?>"></a>
+							 ?><a href="games.php?id=<?php echo $row['id']; ?>"><img src="<?php echo $row['cale'];?>"></a>
 						<h2 style="font-style: italic;">Uncharted- Lost Legacy</h2>
 					</article>	
 					<article>
 							<?php 
-								$sql="SELECT * FROM images WHERE cale='imagini/starwars2.jpg'";
+								$sql="SELECT * FROM games WHERE cale='imagini/starwars2.jpg'";
 								$res=mysqli_query($conectare,$sql);
 								$row=mysqli_fetch_array($res);  
-							 ?><a href="starwars2.php"><img src="<?php echo $row['cale'];?>"></a>
+							 ?><a href="games.php?id=<?php echo $row['id']; ?>"><img src="<?php echo $row['cale'];?>"></a>
 						<h2 style="font-style: italic;">StarWars Battlefront 2</h2>
 					</article>	
 				</div>

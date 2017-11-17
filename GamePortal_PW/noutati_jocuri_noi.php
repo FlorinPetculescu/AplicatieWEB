@@ -1,5 +1,5 @@
 <?php
-	$conectare=mysqli_connect("localhost","root","","poze_reviews");
+	$conectare=mysqli_connect("localhost","root","","slider_si_noutati");
 ?>
 <!DOCTYPE html>
 <html>
@@ -60,7 +60,7 @@
 								$sql="SELECT * FROM images WHERE cale='imagini/fc5.jpg'";
 								$res=mysqli_query($conectare,$sql);
 								$row=mysqli_fetch_array($res);  
-							 ?><a href="fc5.php"><img src="<?php echo $row['cale'];?>"></a>
+							 ?><a href="games.php?id=1"><img src="<?php echo $row['cale'];?>"></a>
 					</div>
 						<h1 style="text-align:center; margin-top:5px; text-shadow: 2px 2px #ff0000; padding-bottom:5px;">27.02.2018</h1>
 						<h2 style="text-shadow: 2px 2px #ff0000;">Far Cry 5</h2>
@@ -72,7 +72,7 @@
 								$sql="SELECT * FROM images WHERE cale='imagini/aco.jpg'";
 								$res=mysqli_query($conectare,$sql);
 								$row=mysqli_fetch_array($res);  
-							 ?><a href="aco.php"><img src="<?php echo $row['cale'];?>"></a>
+							 ?><a href="games.php?id=2"><img src="<?php echo $row['cale'];?>"></a>
 					</div>
 						<h1 style="text-align:center; text-shadow: 2px 2px #ff0000; margin-top:5px; padding-bottom:5px;">27.10.2017</h1>
 						<h2 style="text-shadow: 2px 2px #ff0000;">Assassin's Creed Origins</h2>
@@ -84,7 +84,7 @@
 								$sql="SELECT * FROM images WHERE cale='imagini/fifa18.jpg'";
 								$res=mysqli_query($conectare,$sql);
 								$row=mysqli_fetch_array($res);  
-							 ?><a href="fifa18.php"><img src="<?php echo $row['cale'];?>"></a>
+							 ?><a href="games.php?id=3"><img src="<?php echo $row['cale'];?>"></a>
 					</div>
 						<h1 style="text-align:center; text-shadow: 2px 2px #ff0000; margin-top:5px; padding-bottom:5px;">29.09.2017</h1>
 						<h2 style="text-shadow: 2px 2px #ff0000;">FIFA 18</h2>
@@ -96,7 +96,7 @@
 								$sql="SELECT * FROM images WHERE cale='imagini/codWWII.jpg'";
 								$res=mysqli_query($conectare,$sql);
 								$row=mysqli_fetch_array($res);  
-							 ?><a href="codWWII.php"><img src="<?php echo $row['cale'];?>"></a>
+							 ?><a href="games.php?id=4"><img src="<?php echo $row['cale'];?>"></a>
 					</div>
 						<h1 style="text-align:center; text-shadow: 2px 2px #ff0000; margin-top:5px; padding-bottom:5px;">03.11.2017</h1>
 						<h2 style="text-shadow: 2px 2px #ff0000;">Call of Duty WWII</h2>
